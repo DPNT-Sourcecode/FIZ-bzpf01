@@ -11,7 +11,7 @@ namespace BeFaster.App.Solutions.FIZ
 
             bool isFizz = ((0 == (number % 3)) || result.Contains("3"));
             bool isBuzz = ((0 == (number % 5)) || result.Contains("5"));
-            bool isDeluxe = (result == (new string(result[0], result.Length)));
+            bool isDeluxe = ((2 <= result.Length) && (result == (new string(result[0], result.Length))));
             if (isFizz)
             {
                 result = "fizz";
@@ -40,12 +40,13 @@ namespace BeFaster.App.Solutions.FIZ
                     result = string.Empty;
                 }
 
-                result += "buzz";
+                result += "deluxe";
             }
 
             return result;
         }
     }
 }
+
 
 
