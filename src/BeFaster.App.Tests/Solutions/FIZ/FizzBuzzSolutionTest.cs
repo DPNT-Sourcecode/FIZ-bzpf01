@@ -11,7 +11,6 @@ namespace BeFaster.App.Tests.Solutions.FIZ
     [TestFixture]
     class FizzBuzzSolutionTest
     {
-        [TestCase(0, ExpectedResult = "0")]
         [TestCase(1, ExpectedResult = "1")]
         [TestCase(2, ExpectedResult = "2")]
         [TestCase(3, ExpectedResult = "fizz")]
@@ -21,10 +20,13 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         [TestCase(14, ExpectedResult = "14")]
         [TestCase(15, ExpectedResult = "fizz buzz")]
         [TestCase(16, ExpectedResult = "16")]
+        [TestCase(9998, ExpectedResult = "9998")]
+        [TestCase(9999, ExpectedResult = "fizz")]
         public string FizzBuzzTest(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
         }
     }
 }
+
 
