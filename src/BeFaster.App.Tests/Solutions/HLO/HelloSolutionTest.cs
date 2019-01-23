@@ -28,9 +28,10 @@ namespace BeFaster.App.Tests.Solutions.HLO
         {
             string friendName = System.Guid.NewGuid().ToString();
 
-            Assert.AreEqual(("Hello " + friendName), HelloSolution.Hello(friendName));
+            Assert.AreEqual("Hello, World!", HelloSolution.Hello(friendName));
         }
     }
 }
+
 
 
