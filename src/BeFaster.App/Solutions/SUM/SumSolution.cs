@@ -15,8 +15,9 @@ namespace BeFaster.App.Solutions.SUM
             if ((x < 0) || (100 < x)) { throw new System.ArgumentOutOfRangeException(nameof(x)); }
             if ((y < 0) || (100 < y)) { throw new System.ArgumentOutOfRangeException(nameof(y)); }
 
-            return (x * y);
+            return (x + y);
         }
     }
 }
+
 

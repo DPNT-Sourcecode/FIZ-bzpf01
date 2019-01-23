@@ -36,16 +36,17 @@ namespace BeFaster.App.Tests.Solutions.SUM
             return SumSolution.Sum(x, y);
         }
 
-        [TestCase(100, 100, ExpectedResult = 10000)]
+        [TestCase(100, 100, ExpectedResult = 200)]
         public int ComputeSumBothMaximum(int x, int y)
         {
             return SumSolution.Sum(x, y);
         }
 
-        [TestCase(3, 9, ExpectedResult = 27)]
+        [TestCase(3, 9, ExpectedResult = 12)]
         public int ComputeSumBothMiddle(int x, int y)
         {
             return SumSolution.Sum(x, y);
         }
     }
 }
+
