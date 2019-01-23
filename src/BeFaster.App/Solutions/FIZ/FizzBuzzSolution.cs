@@ -9,7 +9,8 @@ namespace BeFaster.App.Solutions.FIZ
             // Default to using the number.
             string result = number.ToString();
 
-            bool isFizz = ((0 == (number % 3)) || result.Contains("3"));
+            bool contains3 = result.Contains("3");
+            bool isFizz = ((0 == (number % 3)) || contains3);
             bool isBuzz = ((0 == (number % 5)) || result.Contains("5"));
             bool isDeluxe = ((2 <= result.Length) && (result == (new string(result[0], result.Length))));
             if (isFizz)
@@ -50,4 +51,5 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
