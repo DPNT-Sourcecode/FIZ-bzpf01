@@ -19,5 +19,3 @@ namespace BeFaster.App.Solutions.SUM
         }
     }
 }
-
-
