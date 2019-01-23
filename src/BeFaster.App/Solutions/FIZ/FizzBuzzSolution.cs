@@ -39,7 +39,10 @@ namespace BeFaster.App.Solutions.FIZ
                 {
                     result = string.Empty;
                 }
-
+                if (1 == (number % 2))
+                {
+                    result += "fake ";
+                }
                 result += "deluxe";
             }
 
@@ -47,3 +50,4 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+

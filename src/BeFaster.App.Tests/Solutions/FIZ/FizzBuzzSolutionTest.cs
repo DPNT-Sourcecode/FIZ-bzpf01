@@ -22,7 +22,7 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         [TestCase(14, ExpectedResult = "14")]
         [TestCase(15, ExpectedResult = "fizz buzz")]
         [TestCase(16, ExpectedResult = "16")]
-        [TestCase(11, ExpectedResult = "deluxe")]
+        [TestCase(22, ExpectedResult = "deluxe")]
         [TestCase(33, ExpectedResult = "fizz fake deluxe")]
         [TestCase(35, ExpectedResult = "fizz buzz")]
         [TestCase(52, ExpectedResult = "buzz")]
@@ -42,4 +42,5 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         }
     }
 }
+
 
