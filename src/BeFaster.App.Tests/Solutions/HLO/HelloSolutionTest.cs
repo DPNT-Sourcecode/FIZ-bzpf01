@@ -14,13 +14,19 @@ namespace BeFaster.App.Tests.Solutions.HLO
         [Test]
         public void HelloNullParameter()
         {
-            Assert.Ignore();
+            Assert.Throws<System.ArgumentNullException>(() => HelloSolution.Hello(null));
         }
 
         [Test]
         public void HelloEmptyParameter()
         {
-            Assert.Ignore();
+            Assert.Throws<System.ArgumentNullException>(() => HelloSolution.Hello(string.Empty));
+        }
+
+        [Test]
+        public void HelloWhitespaceParameter()
+        {
+            Assert.Throws<System.ArgumentNullException>(() => HelloSolution.Hello(" "));
         }
 
         [Test]
@@ -28,10 +34,11 @@ namespace BeFaster.App.Tests.Solutions.HLO
         {
             string friendName = System.Guid.NewGuid().ToString();
 
-            Assert.AreEqual("Hello, World!", HelloSolution.Hello(friendName));
+            Assert.AreEqual(("Hello, " + friendName + "!"), HelloSolution.Hello(friendName));
         }
     }
 }
+
 
 
 

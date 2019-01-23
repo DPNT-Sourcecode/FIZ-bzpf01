@@ -6,9 +6,12 @@ namespace BeFaster.App.Solutions.HLO
     {
         public static string Hello(string friendName)
         {
-            return string.Format("Hello, World!");
+            if (string.IsNullOrWhiteSpace(friendName)) { throw new System.ArgumentNullException(nameof(friendName)); }
+
+            return string.Format("Hello, {0}!", friendName);
         }
     }
 }
+
 
 
