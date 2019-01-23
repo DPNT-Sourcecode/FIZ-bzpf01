@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BeFaster.App.Solutions.FIZ;
+using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,23 @@ using System.Threading.Tasks;
 
 namespace BeFaster.App.Tests.Solutions.FIZ
 {
+    [TestFixture]
     class FizzBuzzSolutionTest
     {
+        [TestCase(0, ExpectedResult = "0")]
+        [TestCase(1, ExpectedResult = "1")]
+        [TestCase(2, ExpectedResult = "2")]
+        [TestCase(3, ExpectedResult = "fizz")]
+        [TestCase(4, ExpectedResult = "4")]
+        [TestCase(5, ExpectedResult = "buzz")]
+        [TestCase(6, ExpectedResult = "6")]
+        [TestCase(14, ExpectedResult = "14")]
+        [TestCase(15, ExpectedResult = "fizz buzz")]
+        [TestCase(16, ExpectedResult = "16")]
+        public string FizzBuzzTest(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
     }
 }
+
