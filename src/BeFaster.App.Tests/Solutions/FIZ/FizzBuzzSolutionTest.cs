@@ -17,9 +17,17 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         [TestCase(4, ExpectedResult = "4")]
         [TestCase(5, ExpectedResult = "buzz")]
         [TestCase(6, ExpectedResult = "fizz")]
+        [TestCase(13, ExpectedResult = "fizz")]
         [TestCase(14, ExpectedResult = "14")]
         [TestCase(15, ExpectedResult = "fizz buzz")]
         [TestCase(16, ExpectedResult = "16")]
+        [TestCase(35, ExpectedResult = "fizz buzz")]
+        [TestCase(51, ExpectedResult = "buzz")]
+        [TestCase(53, ExpectedResult = "fizz buzz")]
+        [TestCase(150, ExpectedResult = "fizz buzz")]
+        [TestCase(250, ExpectedResult = "buzz")]
+        [TestCase(305, ExpectedResult = "fizz buzz")]
+        [TestCase(636, ExpectedResult = "fizz")]
         [TestCase(9998, ExpectedResult = "9998")]
         [TestCase(9999, ExpectedResult = "fizz")]
         public string FizzBuzzTest(int number)
@@ -28,3 +36,4 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         }
     }
 }
+
